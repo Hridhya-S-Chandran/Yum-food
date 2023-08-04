@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 16  
+      nodejs: 18  
     commands:
       - npm install
   pre_build:
@@ -18,7 +18,6 @@ phases:
     commands:
       - echo Build completed on `date`
 artifacts:
-  type: zip
   files:
     - '**/*'
 cache:
